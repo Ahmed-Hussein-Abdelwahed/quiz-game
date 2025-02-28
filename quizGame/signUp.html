@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/signUp.png" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/signUpPage.css" />
+  </head>
+  <body>
+    <form
+      action="action.php"
+      method="post"
+      target="_blank"
+      class="sign-up-container"
+    >
+
+      <h2>New Account</h2>
+      
+      <label for="ufname">First Name</label>
+      <input type="text" name="fname" id="ufname" placeholder="First Name" />
+
+      <label for="ulname">Last Name</label>
+      <input type="text" name="lname" id="ulname" placeholder="Last Name" />
+
+      <label for="uemail">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="uemail"
+        placeholder="example@example.com"
+      />
+
+      <label for="upass1">Password</label>
+      <input
+        type="password"
+        name="pass"
+        id="upass1"
+        placeholder="At least 8 character contain signs and letters"
+      />
+
+      <label for="upass2">Password Confirmation</label>
+      <input
+        type="password"
+        name="pass"
+        id="upassword"
+        placeholder="Confirm your password"
+      />
+
+      <div>
+        <label for="sex">Gender</label>
+
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+      </div>
+      <label for="bdate">Birth date</label>
+      <input type="date" id="bdate" />
+
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
